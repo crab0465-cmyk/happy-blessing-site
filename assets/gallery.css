@@ -39,12 +39,20 @@ a:focus-visible {
 .ghost-link { min-height: 44px; }
 
 .reference-view {
+  overflow: hidden;
   background: rgba(9, 11, 10, 0.97);
 }
 
-.reference-view img {
-  padding: 4vh 4vw;
+#referenceView > #referenceImage {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(78vw, 1000px);
+  max-height: min(62vh, 620px);
+  padding: 0;
   object-fit: contain;
+  object-position: center;
+  transform: translateY(-3vh);
 }
 
 .reference-caption { z-index: 2; }
@@ -279,6 +287,11 @@ a:focus-visible {
 @media (max-width: 860px) {
   .hero { min-height: 920px; height: 100svh; }
   .hero-nav .ghost-link:first-child { display: none; }
+  #referenceView > #referenceImage {
+    max-width: calc(100% - 36px);
+    max-height: min(50vh, 440px);
+    transform: translateY(-90px);
+  }
   .reference-dock { right: 18px; bottom: 238px; left: 18px; width: auto; }
   .reference-dock > p { margin-bottom: 8px; }
   .reference-thumb { height: 62px; }
