@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="基于钧瓷博物馆实拍素材创作的交互式数字陶瓷展厅。" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>瓷</text></svg>" />
+    <title>窑变新生 | 钧瓷数字展厅</title>
+    <script type="module" crossorigin src="/happy-blessing-site/assets/index-CIi2TT1F.js"></script>
+    <link rel="stylesheet" crossorigin href="/happy-blessing-site/assets/index-C6kE5dsm.css">
+  </head>
+  <body>
+    <main>
+      <section class="hero" aria-label="钧瓷三维交互展厅">
+        <canvas id="scene" aria-label="可旋转观察的钧瓷数字模型"></canvas>
+        <div class="webgl-fallback" id="webglFallback" hidden>
+          <img src="/happy-blessing-site/images/wuyu-front.jpg" alt="钧瓷作品《无语》实拍照片" />
+        </div>
+
+        <header class="topbar">
+          <div>
+            <p class="kicker">钧瓷数字采集 · 2026</p>
+            <h1>窑变新生</h1>
+            <p class="subtitle">从博物馆实拍到可交互数字器物</p>
+          </div>
+          <a class="ghost-link" href="#archive">实拍档案</a>
+        </header>
+
+        <aside class="control-panel" aria-label="釉色控制">
+          <div class="panel-heading">
+            <div>
+              <p class="panel-label">数字釉色</p>
+              <p class="status" id="status" aria-live="polite">窑变红 · 实拍取色</p>
+            </div>
+            <span class="model-tag">艺术化复原</span>
+          </div>
+          <div class="swatches" id="swatches" role="group" aria-label="选择釉色"></div>
+          <button id="fireButton" type="button">窑变生成</button>
+          <p class="source-note">器型参考：馆藏作品《无语》</p>
+        </aside>
+      </section>
+
+      <section class="intro-band" id="archive">
+        <div class="section-heading">
+          <p class="kicker">现场采集 / DIGITAL ARCHIVE</p>
+          <h2>一组照片，重构一座釉色档案</h2>
+          <p>本次创作不宣称文物级扫描，而是以本人现场拍摄为依据，对器型、色谱与釉面流动进行数字艺术化复原。</p>
+        </div>
+
+        <div class="archive-grid">
+          <figure class="archive-item archive-item--large">
+            <img src="/happy-blessing-site/images/wuyu-front.jpg" alt="红黑窑变釉作品《无语》正面" loading="lazy" />
+            <figcaption><strong>无语</strong><span>主模型器型与红黑釉色依据</span></figcaption>
+          </figure>
+          <figure class="archive-item">
+            <img src="/happy-blessing-site/images/wuyu-top.jpg" alt="作品《无语》顶部与内壁" loading="lazy" />
+            <figcaption><strong>俯视采集</strong><span>口沿、内壁与器腔比例</span></figcaption>
+          </figure>
+          <figure class="archive-item">
+            <img src="/happy-blessing-site/images/butterfly-vessel.jpg" alt="蓝紫窑变蝴蝶造型器" loading="lazy" />
+            <figcaption><strong>蝶影</strong><span>蓝紫渐变与现代造型</span></figcaption>
+          </figure>
+          <figure class="archive-item archive-item--wide">
+            <img src="/happy-blessing-site/images/kiln-colors.jpg" alt="红蓝交融釉色钧瓷作品" loading="lazy" />
+            <figcaption><strong>釉色交融</strong><span>铜红、天蓝与深紫色谱参考</span></figcaption>
+          </figure>
+          <figure class="archive-item">
+            <img src="/happy-blessing-site/images/guangkou-taibai.jpg" alt="广口太白钧瓷作品" loading="lazy" />
+            <figcaption><strong>广口太白</strong><span>青绿釉面与颗粒肌理</span></figcaption>
+          </figure>
+          <figure class="archive-item">
+            <img src="/happy-blessing-site/images/yuzun.jpg" alt="钧瓷作品玉兰尊" loading="lazy" />
+            <figcaption><strong>玉兰尊</strong><span>天青釉与分段器型</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="forms-band" id="forms" aria-labelledby="forms-title">
+        <div class="section-heading forms-heading">
+          <p class="kicker">器型观察 / FORM STUDIES</p>
+          <h2 id="forms-title">器以载意</h2>
+          <p>钧瓷不止于釉色。帆、龙、马、太极与莲被转译为器物的轮廓、孔洞和支点，让传统烧造进入当代造型语境。</p>
+        </div>
+
+        <div class="forms-grid">
+          <figure class="form-study form-study--tall">
+            <img src="/happy-blessing-site/images/twin-sails.jpg" alt="双帆形钧瓷器" loading="lazy" />
+            <figcaption><strong>双帆</strong><span>以向上的曲线组织器身</span></figcaption>
+          </figure>
+          <figure class="form-study form-study--wide">
+            <img src="/happy-blessing-site/images/jade-dragon.jpg" alt="环形龙纹钧瓷器" loading="lazy" />
+            <figcaption><strong>环龙</strong><span>让中空结构成为视觉中心</span></figcaption>
+          </figure>
+          <figure class="form-study">
+            <img src="/happy-blessing-site/images/folded-vessel.jpg" alt="折角方形钧瓷器" loading="lazy" />
+            <figcaption><strong>折界</strong><span>方折轮廓承接流动釉色</span></figcaption>
+          </figure>
+          <figure class="form-study">
+            <img src="/happy-blessing-site/images/horse-vessel.jpg" alt="马形钧瓷器" loading="lazy" />
+            <figcaption><strong>骏形</strong><span>从容器转向具象叙事</span></figcaption>
+          </figure>
+          <figure class="form-study form-study--wide">
+            <img src="/happy-blessing-site/images/taiji-vessel.jpg" alt="太极造型钧瓷器" loading="lazy" />
+            <figcaption><strong>太极</strong><span>虚实相生的双体结构</span></figcaption>
+          </figure>
+          <figure class="form-study form-study--tall">
+            <img src="/happy-blessing-site/images/lotus-vessel.jpg" alt="莲花造型钧瓷器" loading="lazy" />
+            <figcaption><strong>莲生</strong><span>层叠花瓣塑造向心秩序</span></figcaption>
+          </figure>
+          <figure class="form-study">
+            <img src="/happy-blessing-site/images/stardust-plate.jpg" alt="蓝紫结晶釉钧瓷盘" loading="lazy" />
+            <figcaption><strong>星瀑</strong><span>结晶斑点扩散为釉面景观</span></figcaption>
+          </figure>
+          <figure class="form-study form-study--tall">
+            <img src="/happy-blessing-site/images/song-flange-vase.jpg" alt="仿宋钧官窑出戟尊" loading="lazy" />
+            <figcaption><strong>出戟尊</strong><span>礼器结构的当代复现</span></figcaption>
+          </figure>
+          <figure class="form-study">
+            <img src="/happy-blessing-site/images/yuehua-zun.jpg" alt="月华尊钧瓷作品" loading="lazy" />
+            <figcaption><strong>月华尊</strong><span>月白与窑变底座相映</span></figcaption>
+          </figure>
+          <figure class="form-study form-study--wide">
+            <img src="/happy-blessing-site/images/lotus-timepiece.jpg" alt="莲孔造型钧瓷时钟" loading="lazy" />
+            <figcaption><strong>莲孔时刻</strong><span>器物语言延伸至日常时间</span></figcaption>
+          </figure>
+          <figure class="form-study form-study--wide">
+            <img src="/happy-blessing-site/images/perforated-bowl.jpg" alt="多层镂孔钧瓷器" loading="lazy" />
+            <figcaption><strong>孔境</strong><span>孔洞引入光影与空间穿透</span></figcaption>
+          </figure>
+          <figure class="form-study form-study--wide">
+            <img src="/happy-blessing-site/images/fish-vessel.jpg" alt="鱼跃造型钧瓷摆件" loading="lazy" />
+            <figcaption><strong>鱼跃</strong><span>环形动势凝结为器物轮廓</span></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="method-band" aria-label="数字复原方法">
+        <div class="method-grid">
+          <div><span>01</span><strong>现场采集</strong><p>保留展陈环境、器物轮廓、釉色和标签信息。</p></div>
+          <div><span>02</span><strong>器型重构</strong><p>根据正面与俯视照片建立轴对称低面数模型。</p></div>
+          <div><span>03</span><strong>釉色提取</strong><p>从实拍中提取红、紫、蓝、青色谱并生成动态纹理。</p></div>
+          <div><span>04</span><strong>在线展演</strong><p>以 Three.js 呈现旋转、缩放与窑变交互。</p></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
