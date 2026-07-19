@@ -6,8 +6,8 @@
     <meta name="description" content="基于钧瓷博物馆实拍素材创作的交互式数字陶瓷展厅。" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>瓷</text></svg>" />
     <title>窑变新生 | 钧瓷数字展厅</title>
-    <script type="module" crossorigin src="/happy-blessing-site/assets/index-CIi2TT1F.js"></script>
-    <link rel="stylesheet" crossorigin href="/happy-blessing-site/assets/index-C6kE5dsm.css">
+    <script type="module" crossorigin src="/happy-blessing-site/assets/index-DD6mfAKz.js"></script>
+    <link rel="stylesheet" crossorigin href="/happy-blessing-site/assets/index-B5b0L8bW.css">
   </head>
   <body>
     <main>
@@ -15,6 +15,10 @@
         <canvas id="scene" aria-label="可旋转观察的钧瓷数字模型"></canvas>
         <div class="webgl-fallback" id="webglFallback" hidden>
           <img src="/happy-blessing-site/images/wuyu-front.jpg" alt="钧瓷作品《无语》实拍照片" />
+        </div>
+        <div class="reference-view" id="referenceView" aria-hidden="true">
+          <img src="/happy-blessing-site/images/wuyu-front.jpg" alt="钧瓷作品《无语》实拍原型" />
+          <div class="reference-caption"><span>实拍原型</span><strong>馆藏作品《无语》</strong></div>
         </div>
 
         <header class="topbar">
@@ -32,10 +36,18 @@
               <p class="panel-label">数字釉色</p>
               <p class="status" id="status" aria-live="polite">窑变红 · 实拍取色</p>
             </div>
-            <span class="model-tag">艺术化复原</span>
+            <span class="model-tag"><i aria-hidden="true"></i>艺术化复原</span>
           </div>
           <div class="swatches" id="swatches" role="group" aria-label="选择釉色"></div>
-          <button id="fireButton" type="button">窑变生成</button>
+          <label class="texture-toggle" for="crackleToggle">
+            <span>开片肌理</span>
+            <input id="crackleToggle" type="checkbox" checked />
+            <i aria-hidden="true"></i>
+          </label>
+          <div class="panel-actions">
+            <button id="fireButton" type="button">窑变生成</button>
+            <button id="compareButton" type="button" aria-controls="referenceView" aria-pressed="false">实拍对照</button>
+          </div>
           <p class="source-note">器型参考：馆藏作品《无语》</p>
         </aside>
       </section>
