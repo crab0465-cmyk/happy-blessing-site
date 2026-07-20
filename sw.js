@@ -1,4 +1,4 @@
-const CACHE_NAME = 'yuzhou-jun-v1';
+const CACHE_NAME = 'yuzhou-jun-v2';
 const CORE_ASSETS = ['./', './ceramic-fallback.jpg', './site.webmanifest'];
 
 self.addEventListener('install', event => {
@@ -21,9 +21,9 @@ self.addEventListener('fetch', event => {
     event.respondWith(
       fetch(event.request).then(response => {
         const copy = response.clone();
-        caches.open(CACHE_NAME).then(cache => cache.put('./', copy));
+        caches.open(CACHE_NAME).then(cache => cache.put(event.request, copy));
         return response;
-      }).catch(() => caches.match('./'))
+      }).catch(() => caches.match(event.request).then(cached => cached || caches.match('./')))
     );
     return;
   }

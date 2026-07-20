@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="汇集河南博物院、禹州钧瓷博物馆与孔家窑实拍素材的交互式钧瓷数字展厅。" />
+    <meta name="theme-color" content="#101312" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23101312'/%3E%3Cpath d='M19 13h26c-1 7-3 11-6 14 5 6 8 12 8 20 0 5-5 8-15 8s-15-3-15-8c0-8 3-14 8-20-3-3-5-7-6-14Z' fill='%23d3b878'/%3E%3C/svg%3E" />
+    <title>窑变新生｜钧瓷数字展厅</title>
+    <script type="module" crossorigin src="./assets/index-DD6mfAKz.js"></script>
+    <script type="module" src="./assets/gallery.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-B5b0L8bW.css" />
+    <link rel="stylesheet" href="./assets/gallery.css?v=full-vessel-2" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳至主要内容</a>
+    <main id="main">
+      <section class="hero" aria-label="钧瓷三维交互展厅">
+        <canvas id="scene" aria-label="可旋转观察、切换釉色的钧瓷数字模型"></canvas>
+        <div class="webgl-fallback" id="webglFallback" hidden>
+          <img src="./images/wuyu-front.jpg" alt="钧瓷作品《无语》实拍照片" />
+        </div>
+        <div class="reference-view" id="referenceView" aria-hidden="true">
+          <img id="referenceImage" src="./images/wuyu-front.jpg" alt="馆藏作品《无语》实拍原型" />
+          <div class="reference-caption">
+            <span id="referenceSource">实拍原型</span>
+            <strong id="referenceTitle">馆藏作品《无语》</strong>
+          </div>
+        </div>
+
+        <header class="topbar">
+          <div>
+            <p class="kicker">钧瓷数字采集 · 2026</p>
+            <h1>窑变新生</h1>
+            <p class="subtitle">从博物馆实拍到可交互数字器物</p>
+          </div>
+          <nav class="hero-nav" aria-label="页面导航">
+            <a class="ghost-link" href="#collections">三馆藏</a>
+            <a class="ghost-link" href="#archive">实拍档案</a>
+          </nav>
+        </header>
+
+        <aside class="control-panel" aria-label="数字模型控制">
+          <div class="panel-heading">
+            <div>
+              <p class="panel-label">数字釉色</p>
+              <p class="status" id="status" aria-live="polite">窑变红 · 实拍取色</p>
+            </div>
+            <span class="model-tag"><i aria-hidden="true"></i>艺术化复原</span>
+          </div>
+          <div class="swatches" id="swatches" role="group" aria-label="选择釉色"></div>
+          <label class="texture-toggle" for="crackleToggle">
+            <span>开片肌理</span>
+            <input id="crackleToggle" type="checkbox" checked />
+            <i aria-hidden="true"></i>
+          </label>
+          <div class="panel-actions">
+            <button id="fireButton" type="button">窑变生成</button>
+            <button id="compareButton" type="button" aria-controls="referenceView" aria-pressed="false">实拍对照</button>
+          </div>
+          <p class="source-note">拖动旋转模型，滚轮或双指缩放</p>
+        </aside>
+
+        <div class="reference-dock" aria-label="切换模型实拍参考">
+          <p><span>实拍参考轨道</span><strong id="dockTitle">从器型到釉色</strong></p>
+          <div class="reference-track">
+            <button class="reference-thumb is-selected" type="button" data-image="./images/wuyu-front.jpg" data-title="无语" data-source="主模型器型参考" aria-pressed="true">
+              <img src="./images/wuyu-front.jpg" alt="红黑窑变作品《无语》" />
+            </button>
+            <button class="reference-thumb" type="button" data-image="./images/collections/kong-sky-glaze-jar.webp" data-title="天青流霞盖罐" data-source="孔家窑钧瓷艺术馆" aria-pressed="false">
+              <img src="./images/collections/kong-sky-glaze-jar.webp" alt="蓝紫窑变盖罐" />
+            </button>
+            <button class="reference-thumb" type="button" data-image="./images/collections/henan-purple-splash-dish.webp" data-title="玫瑰紫斑盘" data-source="河南博物院" aria-pressed="false">
+              <img src="./images/collections/henan-purple-splash-dish.webp" alt="天青釉玫瑰紫斑盘" />
+            </button>
+            <button class="reference-thumb" type="button" data-image="./images/collections/henan-tripod-censer.webp" data-title="天青釉三足炉" data-source="河南博物院" aria-pressed="false">
+              <img src="./images/collections/henan-tripod-censer.webp" alt="天青釉三足炉" />
+            </button>
+            <button class="reference-thumb" type="button" data-image="./images/collections/yuzhou-purple-dragon-vase-full.webp" data-title="蟠龙窑变尊" data-source="禹州钧瓷博物馆" aria-pressed="false">
+              <img src="./images/collections/yuzhou-purple-dragon-vase.webp" alt="蓝紫窑变蟠龙尊" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="collection-band" id="collections" aria-labelledby="collections-title">
+        <div class="collection-intro">
+          <div>
+            <p class="kicker">THREE COLLECTIONS / 三处实拍</p>
+            <h2 id="collections-title">同一炉火，三种观看方式</h2>
+          </div>
+          <p>从古代钧窑器的含蓄天青，到当代钧瓷的雕塑形态，再到窑口展馆中的完整陈列，三组现场影像共同补足器型、釉色与空间语境。</p>
+        </div>
+
+        <div class="collection-tabs" role="tablist" aria-label="选择实拍来源">
+          <button id="tab-henan" role="tab" aria-selected="true" aria-controls="panel-henan" data-collection="henan" type="button">河南博物院 <span>08</span></button>
+          <button id="tab-kong" role="tab" aria-selected="false" aria-controls="panel-kong" data-collection="kong" type="button">孔家窑艺术馆 <span>08</span></button>
+          <button id="tab-yuzhou" role="tab" aria-selected="false" aria-controls="panel-yuzhou" data-collection="yuzhou" type="button">禹州钧瓷博物馆 <span>08</span></button>
+        </div>
+
+        <div class="collection-panel is-active" id="panel-henan" role="tabpanel" aria-labelledby="tab-henan">
+          <div class="collection-meta"><strong>古代钧窑器</strong><span>天青 · 月白 · 玫瑰紫斑</span><a href="https://v.douyin.com/B9ybOhTSeVw/" target="_blank" rel="noreferrer">查看素材来源</a></div>
+          <div class="collection-grid">
+            <figure class="collection-item collection-item--hero"><button type="button" data-lightbox><img src="./images/collections/henan-lobed-bowl.webp" alt="河南博物院藏天青釉葵口碗" loading="lazy" /><span>葵口碗</span></button></figure>
+            <figure class="collection-item"><button type="button" data-lightbox><img src="./images/collections/henan-lotus-bowl.webp" alt="河南博物院藏莲瓣形钧窑碗" loading="lazy" /><span>莲瓣碗</span></button></figure>
+            <figure class="collection-item collection-item--wide"><button type="button" data-lightbox><img src="./images/collections/henan-purple-splash-dish.webp" alt="河南博物院藏天青釉玫瑰紫斑盘" loading="lazy" /><span>玫瑰紫斑盘</span></button></figure>
+            <figure class="collection-item"><button type="button" data-lightbox><img src="./images/collections/henan-tripod-censer.webp" alt="河南博物院藏天青釉三足炉" loading="lazy" /><span>三足炉</span></button></figure>
+            <figure class="collection-item"><button type="button" data-lightbox><img src="./images/collections/henan-ribbed-dish.webp" alt="河南博物院藏出筋花口盘" loading="lazy" /><span>出筋盘</span></button></figure>
+            <figure class="collection-item collection-item--tall"><button type="button" data-lightbox><img src="./images/collections/henan-flower-mouth-vase.webp" alt="河南博物院藏花口瓶" loading="lazy" /><span>花口瓶</span></button></figure>
+            <figure class="collection-item collection-item--wide"><button type="button" data-lightbox><img src="./images/collections/henan-tall-vase.webp" alt="河南博物院藏大型钧窑瓶" loading="lazy" /><span>长颈瓶</span></button></figure>
+            <figure class="collection-item"><button type="button" data-lightbox><img src="./images/collections/henan-sky-blue-dish.webp" alt="河南博物院藏天青釉盘" loading="lazy" /><span>天青盘</span></button></figure>
+          </div>
+        </div>
+
+        <div class="collection-panel" id="panel-kong" role="tabpanel" aria-labelledby="tab-kong" hidden>
+          <div class="collection-meta"><strong>现代窑变与展陈</strong><span>蓝紫交融 · 器型实验 · 窑口空间</span><a href="https://v.douyin.com/1v8xd9OJg5s/" target="_blank" rel="noreferrer">查看素材来源</a></div>
+          <div class="collection-grid">
+            <figure class="collection-item collection-item--hero"><button type="button" data-lightbox><img src="./images/collections/kong-sky-glaze-jar.webp" alt="孔家窑蓝紫窑变盖罐" loading="lazy" /><span>天青流霞</span></button></figure>
+            <figure class="collection-item"><button type="button" data-lightbox><img src="./images/collections/kong-incense-burner.webp" alt="孔家窑象耳香薰" loading="lazy" /><span>象耳香薰</span></button></figure>
+            <figure class="collection-item collection-item--wide"><button type="button" data-lightbox><img src="./images/collections/kong-gallery-hall.webp" alt="孔家窑艺术馆长廊展陈" loading="lazy" /><span>展馆长廊</span></button></figure>
+            <figure class="collection-item"><button type="button" data-lightbox><img src="./images/collections/kong-flat-teapot.webp" alt="孔家窑扁圆形钧瓷壶" loading="lazy" /><span>扁圆壶</span></button></figure>
+            <figure class="collection-item collection-item--tall"><button type="button" data-lightbox><img src="./images/collections/kong-sculptural-vase.webp" alt="孔家窑多层雕塑形花器" loading="lazy" /><span>层岩花器</span></button></figure>
+            <figure class="collection-item collection-item--wide"><button type="button" data-lightbox><img src="./images/collections/kong-workshop-display.webp" alt="孔家窑展馆器物陈列空间" loading="lazy" /><span>器物矩阵</span></button></figure>
+            <figure class="collection-item"><button type="button" data-lightbox><img src="./images/collections/kong-vessel-wall.webp" alt="孔家窑木格展柜中的钧瓷器" loading="lazy" /><span>釉色谱系</span></button></figure>
+            <figure class="collection-item"><button type="button" data-lightbox><img src="./images/collections/kong-museum-exterior.webp" alt="孔家窑钧瓷艺术馆建筑外观" loading="lazy" /><span>窑口现场</span></button></figure>
+          </div>
+        </div>
+
+        <div class="collection-panel" id="panel-yuzhou" role="tabpanel" aria-labelledby="tab-yuzhou" hidden>
+          <div class="collection-meta"><strong>当代雕塑性钧瓷</strong><span>龙纹 · 仿生 · 观念器物</span><a href="https://v.douyin.com/jcp6aF061Bg/" target="_blank" rel="noreferrer">查看素材来源</a></div>
+          <div class="collection-grid">
+            <figure class="collection-item collection-item--hero"><button type="button" data-lightbox><img src="./images/collections/yuzhou-dragon-sculpture.webp" alt="禹州钧瓷博物馆龙形钧瓷雕塑" loading="lazy" /><span>龙腾</span></button></figure>
+            <figure class="collection-item"><button type="button" data-lightbox><img src="./images/collections/yuzhou-dragon-vat.webp" alt="禹州钧瓷博物馆紫色蟠龙缸" loading="lazy" /><span>蟠龙缸</span></button></figure>
+            <figure class="collection-item collection-item--wide"><button type="button" data-lightbox><img src="./images/collections/yuzhou-cloud-dragon.webp" alt="禹州钧瓷博物馆云龙摆件" loading="lazy" /><span>云龙</span></button></figure>
+            <figure class="collection-item"><button type="button" data-lightbox><img src="./images/collections/yuzhou-coiled-dragon.webp" alt="禹州钧瓷博物馆盘龙造型器" loading="lazy" /><span>盘龙</span></button></figure>
+            <figure class="collection-item collection-item--tall"><button type="button" data-lightbox><img src="./images/collections/yuzhou-hand-vessel.webp" alt="禹州钧瓷博物馆手形白釉器" loading="lazy" /><span>托云</span></button></figure>
+            <figure class="collection-item collection-item--wide"><button type="button" data-lightbox><img src="./images/collections/yuzhou-purple-dragon-vase.webp" alt="禹州钧瓷博物馆蓝紫窑变蟠龙尊" loading="lazy" /><span>蟠龙尊</span></button></figure>
+            <figure class="collection-item"><button type="button" data-lightbox><img src="./images/collections/yuzhou-kylin-detail.webp" alt="禹州钧瓷博物馆麒麟雕塑釉色细节" loading="lazy" /><span>麒麟釉色</span></button></figure>
+            <figure class="collection-item"><button type="button" data-lightbox><img src="./images/collections/yuzhou-square-teapot.webp" alt="禹州钧瓷博物馆方形花釉壶" loading="lazy" /><span>花釉方壶</span></button></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band" id="archive" aria-labelledby="archive-title">
+        <div class="section-heading">
+          <p class="kicker">DIGITAL ARCHIVE / 原有实拍档案</p>
+          <h2 id="archive-title">一组照片，重构一座釉色档案</h2>
+          <p>数字模型并非文物级扫描，而是以现场照片为依据，对器型、色调与釉面流动进行艺术化复原。新增三处实拍，让模型的颜色和轮廓有了更完整的参照系。</p>
+        </div>
+        <div class="archive-grid">
+          <figure class="archive-item archive-item--large"><img src="./images/wuyu-front.jpg" alt="红黑窑变作品《无语》正面" loading="lazy" /><figcaption><strong>无语</strong><span>主模型器型与红黑釉色依据</span></figcaption></figure>
+          <figure class="archive-item"><img src="./images/wuyu-top.jpg" alt="作品《无语》顶部与内壁" loading="lazy" /><figcaption><strong>俯视采集</strong><span>口沿、内壁与器腹比例</span></figcaption></figure>
+          <figure class="archive-item"><img src="./images/butterfly-vessel.jpg" alt="蓝紫窑变蝴蝶造型器" loading="lazy" /><figcaption><strong>蝶影</strong><span>蓝紫渐变与当代造型</span></figcaption></figure>
+          <figure class="archive-item archive-item--wide"><img src="./images/kiln-colors.jpg" alt="红蓝交融釉色钧瓷作品" loading="lazy" /><figcaption><strong>釉色交融</strong><span>铜红、天蓝与深紫色谱</span></figcaption></figure>
+          <figure class="archive-item"><img src="./images/guangkou-taibai.jpg" alt="广口太白钧瓷作品" loading="lazy" /><figcaption><strong>广口太白</strong><span>青绿釉面与颗粒肌理</span></figcaption></figure>
+          <figure class="archive-item"><img src="./images/yuzun.jpg" alt="钧瓷作品玉兰尊" loading="lazy" /><figcaption><strong>玉兰尊</strong><span>天青釉与分段器型</span></figcaption></figure>
+        </div>
+      </section>
+
+      <section class="method-band" aria-label="数字复原方法">
+        <div class="method-grid">
+          <div><span>01</span><strong>现场采集</strong><p>保留展陈环境、器物轮廓、釉色和标签信息。</p></div>
+          <div><span>02</span><strong>器型重构</strong><p>依据正面与俯视照片建立轴对称低面数模型。</p></div>
+          <div><span>03</span><strong>釉色提取</strong><p>从实拍中提取红、紫、蓝、青色谱并生成动态纹理。</p></div>
+          <div><span>04</span><strong>在线展演</strong><p>以 Three.js 呈现旋转、缩放、开片与窑变交互。</p></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>钧瓷数字展厅 · 图像用于文化研究与数字展示</p>
+      <p>新增实拍来源：抖音创作者“土豆薄荷糖”“红”“内观自在”，以及相关博物馆与艺术馆现场。</p>
+    </footer>
+
+    <dialog class="image-dialog" id="imageDialog" aria-labelledby="dialogTitle">
+      <button class="dialog-close" type="button" aria-label="关闭大图">×</button>
+      <img id="dialogImage" src="" alt="" />
+      <p id="dialogTitle"></p>
+    </dialog>
+  </body>
+</html>
