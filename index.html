@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#080807" />
-    <meta name="description" content="以 Three.js 粒子重构钧瓷器型的数字陶瓷实验室。" />
+    <meta name="description" content="来自河南禹州的沉浸式钧瓷数字展，以粒子、窑变釉色与手势交互呈现钧瓷之都的千年窑火。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="zh_CN" />
+    <meta property="og:title" content="粒界 · 禹州钧瓷数字展" />
+    <meta property="og:description" content="一城窑火，千年钧色。走进禹州钧瓷之都的沉浸式数字展。" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="manifest" href="./site.webmanifest" />
     <link rel="icon" href="data:," />
-    <title>粒界 · 数字陶瓷实验室</title>
-    <script type="module" crossorigin src="./assets/index-C53X4ezH.js"></script>
-    <link rel="stylesheet" crossorigin href="./assets/index-CV_XemGF.css">
+    <title>粒界 · 禹州钧瓷数字展</title>
+    <script type="module" crossorigin src="./assets/index-C82ZcPoN.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CipVozsx.css">
   </head>
   <body>
     <main id="app">
@@ -29,6 +35,12 @@
           <span><small>粒子</small><b id="particle-count">12K</b></span>
           <span><small>输入</small><b id="gesture-label">鼠标</b></span>
         </div>
+        <button class="story-trigger" id="story-button" type="button" aria-controls="story-drawer" aria-expanded="false">
+          <i data-lucide="book-open"></i><span>禹州展卷</span>
+        </button>
+        <button class="icon-button" id="share-button" type="button" aria-label="分享展览" title="分享展览">
+          <i data-lucide="share-2"></i>
+        </button>
         <button class="icon-button" id="fullscreen-button" type="button" aria-label="进入全屏" title="进入全屏">
           <i data-lucide="maximize-2"></i>
         </button>
@@ -114,14 +126,58 @@
         <span><i data-lucide="sparkles"></i> 腕线旋转</span>
       </div>
 
+      <div class="story-backdrop" id="story-backdrop" hidden></div>
+      <aside class="story-drawer" id="story-drawer" aria-hidden="true" aria-labelledby="story-title" inert>
+        <header class="story-drawer__header">
+          <div>
+            <span class="eyebrow">YUZHOU · HENAN</span>
+            <h2 id="story-title">一城窑火，千年钧色</h2>
+          </div>
+          <button class="icon-button" id="story-close" type="button" aria-label="关闭禹州展卷" title="关闭禹州展卷"><i data-lucide="x"></i></button>
+        </header>
+        <div class="story-drawer__body">
+          <p class="story-lead">禹州，因钧瓷而被世界认识。泥土、火焰与时间在这里相遇，每一次开窑，都是不可复制的颜色诞生。</p>
+          <dl class="story-facts">
+            <div><dt>故里</dt><dd>河南禹州</dd></div>
+            <div><dt>釉色</dt><dd>天青 · 月白 · 铜红</dd></div>
+            <div><dt>窑韵</dt><dd>入窑一色 · 出窑万彩</dd></div>
+          </dl>
+          <section>
+            <span class="story-number">01</span>
+            <h3>从钧台到神垕</h3>
+            <p>钧瓷兴于唐、盛于宋，以瑰丽自然的窑变闻名。它通常与汝、官、哥、定并称宋代五大名窑。钧台窑遗址与神垕古镇，让古老窑火在禹州的山川之间延续至今。</p>
+          </section>
+          <section>
+            <span class="story-number">02</span>
+            <h3>泥与火塑造一座城</h3>
+            <p>从选土、制坯、素烧到施釉、烧成，钧瓷的每一道工序都凝聚着手艺人的判断。铜元素在高温还原气氛中流动，成就天青、玫瑰紫、海棠红等彼此交融的窑变气象。</p>
+          </section>
+          <section>
+            <span class="story-number">03</span>
+            <h3>让钧色被更多人看见</h3>
+            <p>这件数字作品以万千粒子重构钧瓷器型：聚合是成器，漂移是釉色流动，解构是一次面向当代的再想象。屏幕中的光点，回应着禹州窑火里真实而宏大的创造。</p>
+          </section>
+          <footer class="story-signoff">
+            <span>中国钧瓷之都</span>
+            <strong>河南 · 禹州</strong>
+          </footer>
+        </div>
+      </aside>
+
       <div class="webgl-fallback" id="webgl-fallback" hidden>
-        <img src="./ceramic-fallback.jpg" alt="窑变钧瓷实拍展品" />
+        <img data-src="./ceramic-fallback.jpg" alt="窑变钧瓷实拍展品" />
         <div>
-          <span>STATIC EXHIBIT</span>
-          <h1>窑变双系尊</h1>
-          <p>当前设备无法启动 WebGL，已切换为静态展陈。</p>
+          <span>YUZHOU · STATIC EXHIBIT</span>
+          <h1>一城窑火，千年钧色</h1>
+          <p id="fallback-message">当前设备无法启动 WebGL，已切换为禹州钧瓷静态展陈。</p>
         </div>
       </div>
+      <noscript>
+        <section class="noscript-exhibit">
+          <img src="./ceramic-fallback.jpg" alt="禹州窑变钧瓷展品" />
+          <div><span>YUZHOU · HENAN</span><h1>一城窑火，千年钧色</h1><p>禹州是钧瓷故里。请启用 JavaScript 进入粒子互动展，或继续欣赏这件静态钧瓷展品。</p></div>
+        </section>
+      </noscript>
     </main>
   </body>
 </html>

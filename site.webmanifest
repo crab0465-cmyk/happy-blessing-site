@@ -1,0 +1,10 @@
+{
+  "name": "粒界 · 禹州钧瓷数字展",
+  "short_name": "禹州钧瓷",
+  "description": "来自河南禹州的沉浸式钧瓷数字展",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#080807",
+  "theme_color": "#080807"
+}
