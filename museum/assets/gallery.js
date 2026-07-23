@@ -60,6 +60,25 @@ const dialogImage = document.querySelector('#dialogImage');
 const dialogTitle = document.querySelector('#dialogTitle');
 const closeButton = dialog.querySelector('.dialog-close');
 
+function imageCredit(source) {
+  if (source.includes('/collections/kong-')) return '授权来源 @土豆薄荷糖';
+  if (source.includes('/collections/henan-')) return '授权来源 @红';
+  if (source.includes('/collections/yuzhou-')) return '授权来源 @内观自在';
+  return '经授权使用';
+}
+
+document.querySelectorAll('img').forEach(image => {
+  if (image.id === 'dialogImage') return;
+  const container = image.parentElement;
+  if (!container || container.querySelector(':scope > .source-credit-badge')) return;
+  container.classList.add('has-source-credit');
+  const badge = document.createElement('span');
+  badge.className = 'source-credit-badge';
+  badge.textContent = imageCredit(image.getAttribute('src') || '');
+  badge.setAttribute('aria-label', `${badge.textContent}，图片内含完整水印`);
+  container.appendChild(badge);
+});
+
 document.querySelectorAll('[data-lightbox]').forEach(button => {
   button.addEventListener('click', () => {
     const image = button.querySelector('img');

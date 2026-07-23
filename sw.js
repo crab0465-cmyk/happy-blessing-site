@@ -1,4 +1,4 @@
-const CACHE_NAME = 'yuzhou-jun-v2';
+const CACHE_NAME = 'yuzhou-jun-v3';
 const CORE_ASSETS = ['./', './ceramic-fallback.jpg', './site.webmanifest'];
 
 self.addEventListener('install', event => {

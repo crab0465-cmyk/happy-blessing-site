@@ -1,0 +1,375 @@
+{
+  "statement": "The submitter confirmed that authorization was obtained on Douyin. Original authorization evidence must be retained separately.",
+  "generated_by": "watermark_authorized_images.py",
+  "count": 46,
+  "images": [
+    {
+      "path": "museum/images/butterfly-detail.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "8a31137945e156e9c70b4890a53c7a802bd2a76ee4ac0b4d997d518a25ba085f",
+      "watermarked_sha256": "d3b382bf8734faf666cc73b7d1bedbc6e2a2186532c5ff6b31e433a3b7cd845f",
+      "width": 1706,
+      "height": 1279
+    },
+    {
+      "path": "museum/images/butterfly-vessel.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "22f259a69dd556cef4e65c4555c3b9d06f7af80676ca429ada8ef70202571f39",
+      "watermarked_sha256": "9863d86226a3a57604e51ccde41979e968f3366595a96904c28431f96888db5b",
+      "width": 1279,
+      "height": 1706
+    },
+    {
+      "path": "museum/images/collections/henan-flower-mouth-vase.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @红",
+      "original_sha256": "5036b696c381c9a3b623750557a36d9adc28f5e1c2dad46a6af40be2be2649a5",
+      "watermarked_sha256": "da6962d8bc894be95041bcf1393feb38df150a3165042c0265a71220860a939d",
+      "width": 1000,
+      "height": 1333
+    },
+    {
+      "path": "museum/images/collections/henan-lobed-bowl.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @红",
+      "original_sha256": "95f33cc4e468c9f16047a11790ac4c2d11fad75b44a92d7d53aac45dbdc1182c",
+      "watermarked_sha256": "9be48658a599b13db7e4ce825ea450840e5247d7b6e84ec4bb962b18794d16f3",
+      "width": 1000,
+      "height": 1333
+    },
+    {
+      "path": "museum/images/collections/henan-lotus-bowl.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @红",
+      "original_sha256": "e08b3ce5e2de9ebcf745bbbcf352b2dff2b4c75bdae301600b9fa03ce91f5cf2",
+      "watermarked_sha256": "37f54e9869af5422dd9040a5513d997eec7ff7bf2b86d5b8798c9f152d39f91e",
+      "width": 1000,
+      "height": 1333
+    },
+    {
+      "path": "museum/images/collections/henan-purple-splash-dish.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @红",
+      "original_sha256": "adf6b7964b845579315baa619964e02a91baeb8fde452596ad2815d64979c7c2",
+      "watermarked_sha256": "540c41d6321b20f99dd95f548336872539dfe670aecbdd6f49e3449af772ccfc",
+      "width": 1000,
+      "height": 1333
+    },
+    {
+      "path": "museum/images/collections/henan-ribbed-dish.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @红",
+      "original_sha256": "32e90767dcffd7782754382e5dde97d133d0fcb4361c28e60df998d4035841e4",
+      "watermarked_sha256": "c6a06e03eb6f9fcbfb161df75a9f5b91e69bd890b8a7ec0d9c1697eb11ab5d83",
+      "width": 1000,
+      "height": 1333
+    },
+    {
+      "path": "museum/images/collections/henan-sky-blue-dish.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @红",
+      "original_sha256": "00a0dc5fb1a12fee92d362436c542dd960a2c5ccfaefc78bb4db7574a6c6df36",
+      "watermarked_sha256": "2345d44ebbbeee3d63fd0ecac7547f241ebc7a57db55dc1897e272f536da9b89",
+      "width": 1000,
+      "height": 1333
+    },
+    {
+      "path": "museum/images/collections/henan-tall-vase.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @红",
+      "original_sha256": "612d576ced5856c9813793c8b0db62e0bb5f2c608aa64dffd6315838537797d1",
+      "watermarked_sha256": "2f287ad20b8e516a5fecc1eac6d40a64463f5c007ed49128cb686b78db5d1d22",
+      "width": 1000,
+      "height": 1333
+    },
+    {
+      "path": "museum/images/collections/henan-tripod-censer.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @红",
+      "original_sha256": "21af4fd249916191792801fdeba8bc7296e2b6e599976c5d3f97c3cd0ebcb2e9",
+      "watermarked_sha256": "a1e3351a728961c892b33c1fbf98eeec006291d1e2b83e801ae313a47c8c2bab",
+      "width": 1000,
+      "height": 1333
+    },
+    {
+      "path": "museum/images/collections/kong-flat-teapot.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @土豆薄荷糖",
+      "original_sha256": "9a8d720cdd5edeb25ae8a57dd1411add0eea7f4c1a8aaf2ea0cad50f118b9de6",
+      "watermarked_sha256": "6c5494b839cc8963b0e2c0b83692dc0210f6eae93426a209cfe2e5403fe24e6b",
+      "width": 1000,
+      "height": 1500
+    },
+    {
+      "path": "museum/images/collections/kong-gallery-hall.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @土豆薄荷糖",
+      "original_sha256": "d91b74062d0f19eeb95254787ca11cb442982e081ac54bcc425d454a6a4168f0",
+      "watermarked_sha256": "e7635eaa2ed6a64fdff5298daedf56065f05c4b9af1968a3fc34e3644d5b25ec",
+      "width": 1000,
+      "height": 1504
+    },
+    {
+      "path": "museum/images/collections/kong-incense-burner.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @土豆薄荷糖",
+      "original_sha256": "09f1314e2e61906b670b6c22fec172b0c00ee47e1ddd8625b96dd548e14878db",
+      "watermarked_sha256": "b2187f31b6e06f08b0db9ad5cb8ceaf16a8918e8192b9a078b3c12b57608853c",
+      "width": 1000,
+      "height": 1500
+    },
+    {
+      "path": "museum/images/collections/kong-museum-exterior.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @土豆薄荷糖",
+      "original_sha256": "34e8fead4b397816cbb75b8e0aef729cfa5906f39cca59e51ce171a39307a0de",
+      "watermarked_sha256": "0325da1f53413083dade6fa49b0158666b6558c7db1a1b2c68ba1a289f7a4ec9",
+      "width": 1000,
+      "height": 1500
+    },
+    {
+      "path": "museum/images/collections/kong-sculptural-vase.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @土豆薄荷糖",
+      "original_sha256": "06c65cd897aac9986be73f1ed91ff3a738b4a638e34ea2f1b07b75786229eb69",
+      "watermarked_sha256": "f9f0e70017425434fae373227d08012ba58d641f88abd57da78e658feac79ce8",
+      "width": 1000,
+      "height": 1500
+    },
+    {
+      "path": "museum/images/collections/kong-sky-glaze-jar.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @土豆薄荷糖",
+      "original_sha256": "b1ddfb2cfc545b10abd5d8dd597e0a38ac2ed9f82bb33330de994d6724a4da1a",
+      "watermarked_sha256": "0fa0732592a2f58ff415a1552e7e2122f06c09ecbc3376acbe3fb1e480e41dc4",
+      "width": 1000,
+      "height": 1500
+    },
+    {
+      "path": "museum/images/collections/kong-vessel-wall.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @土豆薄荷糖",
+      "original_sha256": "b9205b846dfbd6357c9b4f6dcc3d8997aae71411c23320121c92411fd5cd89b3",
+      "watermarked_sha256": "d9c8a3a340aef0869b22249bf85fed24f383e5af8fab805ef665977a950b01e4",
+      "width": 1000,
+      "height": 1500
+    },
+    {
+      "path": "museum/images/collections/kong-workshop-display.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @土豆薄荷糖",
+      "original_sha256": "2ed59b6eb2cb049e7177e4c1890f56cfd00776f313eca48f97083bdf350fc5af",
+      "watermarked_sha256": "d843de52fb4f4bf38d3a091ff19afe084cd96c4f45dc13a772dd93c60d6e1870",
+      "width": 1000,
+      "height": 1500
+    },
+    {
+      "path": "museum/images/collections/yuzhou-cloud-dragon.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @内观自在",
+      "original_sha256": "84a66bdd05318dd472ba517eae576dfeef7f7b06bd15fbafcc5ed970115a9a46",
+      "watermarked_sha256": "ef9abab3711d70ba385eec6c94712c916e70cd37e426760a6f81b2337b6bdb47",
+      "width": 1000,
+      "height": 1778
+    },
+    {
+      "path": "museum/images/collections/yuzhou-coiled-dragon.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @内观自在",
+      "original_sha256": "184ee9f3c19475841bdfc7f1ec2d018892b4af96c4c5773362203cc1e125debf",
+      "watermarked_sha256": "1c4c5f47bc06a2edb64bf050cb7cc7c924720299d8caee26fc6d884754605f6f",
+      "width": 1000,
+      "height": 1778
+    },
+    {
+      "path": "museum/images/collections/yuzhou-dragon-sculpture.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @内观自在",
+      "original_sha256": "8a70b1eb53a27ee04f3c525a09fdb4374ddf78252b44b3f6ec71a7fe56e7a8e8",
+      "watermarked_sha256": "1ff2c348488e0e8f26e04cf3c3889893cf7ec098d16f7e5521ff6f6cc3ab3ce0",
+      "width": 1000,
+      "height": 1778
+    },
+    {
+      "path": "museum/images/collections/yuzhou-dragon-vat.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @内观自在",
+      "original_sha256": "9d5a0698a499fbf796dddc9932bf96595fe4b5a14a18d2698c70c0a6b655ac55",
+      "watermarked_sha256": "7429c50194bb3649fe09ceabdd3add0806a38a557edef2e0df422f9644677416",
+      "width": 1000,
+      "height": 1778
+    },
+    {
+      "path": "museum/images/collections/yuzhou-hand-vessel.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @内观自在",
+      "original_sha256": "754a5a30c3c85b86f30f4385afdf421a94779413cf195963b0d0f0236b9d9ee1",
+      "watermarked_sha256": "16afa0c3445244c9166838ad5949715b937fe1486854cddd69ac58fc1617c69c",
+      "width": 1000,
+      "height": 1778
+    },
+    {
+      "path": "museum/images/collections/yuzhou-kylin-detail.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @内观自在",
+      "original_sha256": "6fbca49888954ac179ed42df367dbae7c513200857995bd404e038f7a66b9f2d",
+      "watermarked_sha256": "0b65b8a5cf4be99f8ea689396ec3a4aef5d09c3f95ec921be4b58b65650ef3cb",
+      "width": 1000,
+      "height": 1778
+    },
+    {
+      "path": "museum/images/collections/yuzhou-purple-dragon-vase-full.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @内观自在",
+      "original_sha256": "9c97c22d9f451f7f71881b6464a23340e8f630c976aabc29d52619bb51edd81c",
+      "watermarked_sha256": "ce96f83b5545bc60bc919a800f2683baaed41d164039048067e460bd1ff473d9",
+      "width": 1000,
+      "height": 1308
+    },
+    {
+      "path": "museum/images/collections/yuzhou-purple-dragon-vase.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @内观自在",
+      "original_sha256": "fbf72305f9f52e5e62014033f3aa9326a47afc9e856a8850fab374ba1088b2bc",
+      "watermarked_sha256": "3ae240b172eb34a0acc67aabb5c7f84e35ac475df59055c07ceff9b89e2d4585",
+      "width": 1000,
+      "height": 1778
+    },
+    {
+      "path": "museum/images/collections/yuzhou-square-teapot.webp",
+      "watermark": "已获授权 | 素材来源：抖音 @内观自在",
+      "original_sha256": "c43df9a6c913a1aa297bc659e25e8c99b2db5f873e9e10b4349761d4ef3c7c19",
+      "watermarked_sha256": "57f6a1f156382ba01f86dbefca8e46d5d3c779c7e2080c56e6a855150e006bec",
+      "width": 1000,
+      "height": 1778
+    },
+    {
+      "path": "museum/images/fanghuazun.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "48d796ca7525d479a53a57e1cf32119f69b13b1ee8ce8e539b7f6e1e2700cf8c",
+      "watermarked_sha256": "5f34e2431f11e53bd8320825fe96db544d4f227c9cee8d90998564ba3d5ac449",
+      "width": 1279,
+      "height": 1706
+    },
+    {
+      "path": "museum/images/fish-vessel.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "645205d75f1fe83e9336102155066b6a99485e8569cee460a1cc061785d7835a",
+      "watermarked_sha256": "c64646a5ba29466e3b81cf5f1d1d21e994f615b2d4ea7f6617e401013f7e2bf9",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "path": "museum/images/folded-vessel.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "1011cf5ece44e0edda0c7d9219ed621f40ed726c939c7e31edd8d847fe3da90f",
+      "watermarked_sha256": "c92af51a527905aa073f76e0218a14f2dd0bf9c7de780f6666406d3a010cdc0c",
+      "width": 1024,
+      "height": 1366
+    },
+    {
+      "path": "museum/images/guangkou-taibai.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "607f3fcfe9d441a62a709de1ad41345bbff7c7e19a7ae43d2161242a30f480f7",
+      "watermarked_sha256": "cbbeb22f2858c12d46e1df74fd94940ed1f2ed83f0610e645a98cf77ae5b1a77",
+      "width": 1279,
+      "height": 1706
+    },
+    {
+      "path": "museum/images/horse-vessel.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "4d6aa7c469c276d0000b65bb6e71e3bd72226ce73aeec9d69829a10c83d52152",
+      "watermarked_sha256": "fa078b5eedd423cfc1994ec5932b243cee78b1a9c97ca7951433a959e7a90ba3",
+      "width": 1364,
+      "height": 1024
+    },
+    {
+      "path": "museum/images/jade-dragon.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "10d7c02784f54203c5bc6d0eaa11fc7241e036125687b8f064a5631d96d3c4a8",
+      "watermarked_sha256": "78cffb5a19c7b93a8e871fb24b11e37bedc1a2788ca12d2f7a43486d1cd3acd2",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "path": "museum/images/kiln-colors.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "a9ab2dc4836ec9155c8e8bccbdcc418a64ba5f4bb5bbd52a25bc24605394142f",
+      "watermarked_sha256": "d3c430fa41d9c41d64f5f273c4ab6e9226af61cc69b6c960bbb0d5493d2503b5",
+      "width": 1706,
+      "height": 1279
+    },
+    {
+      "path": "museum/images/lotus-timepiece.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "4188616f9e37a791eb0e02cb6fd404cb1f38a43b2293425016fe178a25a6d769",
+      "watermarked_sha256": "40c362d3a17ff2bac9c49cb03cc3be94cb6be3af5dccdee62161fcdb45be1189",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "path": "museum/images/lotus-vessel.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "e1ec956cc9dc5c2564e56cb146cdea7c25c214abd4dddc944bf444031916ad27",
+      "watermarked_sha256": "3661bb9957a716b73726f5b2d7847e6df9c8de006b982463c175c5b611681824",
+      "width": 1279,
+      "height": 1706
+    },
+    {
+      "path": "museum/images/perforated-bowl.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "7cf6067714562ce927ab1a4512aa68dd0c1fc78ac089c961758733583a0d42dd",
+      "watermarked_sha256": "9112b158ce0032a2f69a0c2da537aed4099ff6acfdb6db95a953d42b8f823c3c",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "path": "museum/images/song-flange-vase.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "448dd6131c78bce495c3b7b88bd382dc8d8e98f28a17a0507d21324eb4c591b3",
+      "watermarked_sha256": "48ddddf37a5c96fa9323d906b7b201b8717b35909ea5754d2eee788885504590",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "path": "museum/images/stardust-plate.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "031c6f82bd8467140f256deb389620b815cde1bbffe6b3cb9cd3a92acbdefc0d",
+      "watermarked_sha256": "fa25eeb3211e7bc1e561ad1574132f0a46ade7d85602fb6b0bf33e97793dcacb",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "path": "museum/images/taiji-vessel.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "d6961781c28322132ea1628487d87f49ef0ba748f4b789b68c039c6ac0232d20",
+      "watermarked_sha256": "35cebf75293dd82765df37648ed65f776a0f853f03f5f9ec0a07e935e43bb4fc",
+      "width": 3072,
+      "height": 4096
+    },
+    {
+      "path": "museum/images/twin-sails.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "524757fce201c6c17143cf3bce6f73db7b196a116ab5cbba19b6566216da008e",
+      "watermarked_sha256": "c634ebb5e21d4c720d49013ba88badb7670c0ac19397449362b104640eced0a5",
+      "width": 1440,
+      "height": 810
+    },
+    {
+      "path": "museum/images/wuyu-front.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "ce7a1f39c7c4334a6cae4bd7fd438f227ba2e78a7df878a9e6d6b3f43cd19390",
+      "watermarked_sha256": "b686a55c747ca62fd19c8588a2a719a174df915abbca6ea036a6d9525e3bbdcf",
+      "width": 1279,
+      "height": 1706
+    },
+    {
+      "path": "museum/images/wuyu-top.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "314924bad668a8e50378494f99dcddc7c777f40ebd82ea4b4f55930c7ab3b7eb",
+      "watermarked_sha256": "322eae4d38f13d835cebc86b5f678ba27db4fc57cd795efbd2a8e9b23c76546b",
+      "width": 1279,
+      "height": 1706
+    },
+    {
+      "path": "museum/images/yuehua-zun.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "fd06b74b6059b5eb1fb89da63a55d4863d85146137cbff06b10e11d29082cb06",
+      "watermarked_sha256": "1dc5bf55f4d0a7edf58bd02f7a533ea8d7dac7e0f5b23a1ad0bad3f409bb9356",
+      "width": 1200,
+      "height": 1600
+    },
+    {
+      "path": "museum/images/yuzun.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "1cbb2edbe6190d6c605b4459bc68c72df4f282b274183b4ba8d9385d849cad2a",
+      "watermarked_sha256": "b2451365b659bf007c802228b5aa07dfe462d70065df531b1d64d7823aa8cf1a",
+      "width": 1279,
+      "height": 1706
+    },
+    {
+      "path": "ceramic-fallback.jpg",
+      "watermark": "经授权使用 | 来源信息见授权凭证",
+      "original_sha256": "ce7a1f39c7c4334a6cae4bd7fd438f227ba2e78a7df878a9e6d6b3f43cd19390",
+      "watermarked_sha256": "b686a55c747ca62fd19c8588a2a719a174df915abbca6ea036a6d9525e3bbdcf",
+      "width": 1279,
+      "height": 1706
+    }
+  ]
+}
